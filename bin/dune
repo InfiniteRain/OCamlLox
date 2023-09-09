@@ -1,0 +1,4 @@
+(executable
+ (public_name OCamlLox)
+ (name main)
+ (libraries core OCamlLox))

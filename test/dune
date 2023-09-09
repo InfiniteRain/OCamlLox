@@ -1,0 +1,8 @@
+(test
+ (name tests)
+ (libraries OCamlLox alcotest core)
+ (preprocess (pps ppx_inline_alcotest))
+ (action 
+   (run %{test} --color=always)))
+
+(env (dev (flags (:standard -warn-error -A))))
